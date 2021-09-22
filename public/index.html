@@ -1,0 +1,147 @@
+<!--
+MangoApps Resources Page
+-->
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Resouces</title>
+    <link rel='stylesheet' href='styles.css'>
+    <script src='index.js'></script>
+  </head>
+  <body>
+    <!--
+    Top Heading of the Page
+    -->
+    <section id='top-heading'>
+      <h1>Customer Resources</h1>
+      <h4>We have put together a lot of resources for you to read, learn, & enjoy!</h4>
+    </section>
+
+    <!--
+    Filters & Results section of the Page
+    - All contanined under a single flex "container"
+    - 2 sections: filters and results
+    -->
+    <section class='container'>
+      <div id='filters'>
+        <!--
+        <input id='search' type='text' placeholder='Search'>
+        <br>
+        -->
+        <label for="filter-by">Filter By: </label>
+        <select name="filter-by" id="filter-by">
+          <option value="none" disabled selected>Select a filter</option>
+          <option value="category">Category</option>
+          <option value="product">Product</option>
+          <option value="industry">Industry</option>
+          <option value="usecase">Use Case</option>
+          <option value="size">Company Size</option>
+        </select>
+        <div class="category hidden">
+          <div class="category-header">
+            <span class="header-text">Category</span>
+          </div>
+          <div class="category-options">
+            <input type="checkbox" id="cs" name="cs" value="case study" selected=false>
+            <label for="cs"> Case Study</label><br>
+            <input type="checkbox" id="wp" name="wp" value="white paper">
+            <label for="wp"> Whitepaper</label><br>
+            <input type="checkbox" id="blog" name="blog" value="blog">
+            <label for="blog"> Blog</label><br>
+          </div>
+        </div>
+        <div class="product hidden">
+          <div class="product-header">
+            <span class="header-text">Product</span>
+          </div>
+          <div class="product-options">
+            <input type="checkbox" id="intranet" name="intranet" value="mango intranet">
+            <label for="intranet"> Mango Intranet</label><br>
+            <input type="checkbox" id="communication" name="communication" value="mango communication">
+            <label for="communication"> Mango Communication</label><br>
+            <input type="checkbox" id="training" name="training" value="mango training">
+            <label for="training"> Mango Training</label><br>
+            <input type="checkbox" id="workspaces" name="workspaces" value="mango workspaces">
+            <label for="workspaces"> Mango Workspaces</label><br>
+            <input type="checkbox" id="all-in-one" name="all-in-one" value="mango all-in-one">
+            <label for="all-in-one"> Mango All-in-One</label><br>
+          </div>
+        </div>
+        <div class="industry hidden">
+          <div class="industry-header">
+            <span class="header-text">Industry</span>
+          </div>
+          <div class="industry-options">
+            <input type="checkbox" id="healthcare" name="healthcare" value="healthcare">
+            <label for="healthcare"> Healthcare</label><br>
+            <input type="checkbox" id="fs" name="fs" value="financial services">
+            <label for="fs"> Financial Services</label><br>
+            <input type="checkbox" id="retail" name="retail" value="retail">
+            <label for="retail"> Retail</label><br>
+            <input type="checkbox" id="manufacturing" name="manufacturing" value="manufacturing">
+            <label for="manufacturing"> Manufacturing</label><br>
+            <input type="checkbox" id="gaming" name="gaming" value="gaming">
+            <label for="gaming"> Gaming</label><br>
+            <input type="checkbox" id="education" name="education" value="education">
+            <label for="education"> Education</label><br>
+            <input type="checkbox" id="fundraising" name="fundraising" value="fundraising">
+            <label for="fundraising"> Fundraising</label><br>
+            <input type="checkbox" id="npo" name="npo" value="npo">
+            <label for="npo"> Non-Profit</label><br>
+            <input type="checkbox" id="advertising" name="advertising" value="advertising">
+            <label for="advertising"> Advertising</label><br>
+            <input type="checkbox" id="ps" name="ps" value="ps">
+            <label for="ps"> Public Safety</label><br>
+            <input type="checkbox" id="construction" name="construction" value="construction">
+            <label for="construction"> Construction</label><br>
+          </div>
+        </div>
+        <div class="usecase hidden">
+          <div class="usecase-header">
+            <span class="header-text">Use Case</span>
+          </div>
+          <div class="usecase-options">
+            <input type="checkbox" id="information-access" name="information-access" value="information access">
+            <label for="information-access"> Instant Information Access</label><br>
+            <input type="checkbox" id="company-hub" name="company-hub" value="company hub">
+            <label for="company-hub"> Centralized Company Hub</label><br>
+            <input type="checkbox" id="remote-workforce" name="remote-workforce" value="remote workforce">
+            <label for="remote-workforce"> Remote Workforce</label><br>
+            <input type="checkbox" id="frontline-workers" name="frontline-workers" value="frontline workers">
+            <label for="frontline-workers"> Frontline Workers</label><br>
+            <input type="checkbox" id="community-culture" name="community-culture" value="community & culture">
+            <label for="community-culture"> Community & Culture</label><br>
+            <input type="checkbox" id="communication" name="communication" value="Communication & Collaboration">
+            <label for="communication"> Communication & Collaboration</label><br>
+            <input type="checkbox" id="engagement" name="engagement" value="employee engagement">
+            <label for="engagement"> Employee Engagement</label><br>
+            <input type="checkbox" id="alerts" name="alerts" value="emergency alerts">
+            <label for="alerts"> Emergency Alerts</label><br>
+            <input type="checkbox" id="replace" name="replace" value="replace old solutions">
+            <label for="replace"> Replace Old Solutions</label><br>
+          </div>
+        </div>
+        <div class="size hidden">
+          <div class="size-header">
+            <span class="header-text">Company Size</span>
+          </div>
+          <div class="size-options">
+            <input type="checkbox" id="xs" name="xs" value="1000">
+            <label for="xs"> 0 - 1,000</label><br>
+            <input type="checkbox" id="s" name="s" value="5000">
+            <label for="s"> 1,000 - 5,000</label><br>
+            <input type="checkbox" id="m" name="m" value="20000">
+            <label for="m"> 5,000 - 20,000</label><br>
+            <input type="checkbox" id="l" name="l" value="50000">
+            <label for="l"> 20,000 - 50,000</label><br>
+            <input type="checkbox" id="xl" name="xl" value="50000+">
+            <label for="xl"> 50,000+</label><br>
+          </div>
+        </div>
+      </div>
+      <div id='results'>
+      </div>
+    </section>
+  </body>
+</html>

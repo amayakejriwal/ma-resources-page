@@ -1,0 +1,105 @@
+body {
+  background: none repeat scroll 0 0 #fff;
+  margin: 0 auto;
+  padding: 0;
+  color: #333;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4 {
+  margin: 0px;
+}
+
+#top-heading {
+  background: linear-gradient(130deg,#2868cc,#349bcf);
+  color: white;
+  text-align: center;
+  padding: 30px 0px 40px 0px;
+  box-sizing: border-box;
+}
+
+#top-heading h1 {
+  line-height: 1.16667 !important;
+  font-size: 66px !important;
+  letter-spacing: -1px !important;
+}
+
+#top-heading h4 {
+  font-size: 1.4em;
+  margin-top: 5px;
+  display: inline-block;
+  color: #fff;
+  font-weight: normal;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#filters {
+  margin: 3% 0% 0% 10%;
+}
+
+.header-text {
+  font-weight: bolder;
+}
+
+#results {
+  margin: 2.5% 0% 0% 10%;
+}
+
+/*
+#search {
+  border-radius: 10px;
+  border-color: #333;
+  border-width: 1px;
+  padding: 5%;
+}
+*/
+
+.category, .product, .industry, .usecase, .size {
+  margin-top: 20px;
+}
+
+#filter-by {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.link-type-box {
+  display: block;
+  padding-bottom: 15px;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0px 0px 9px 2px rgb(158 151 151 / 20%);
+  border-radius: 20px;
+}
+
+button {
+  background-color: #8ac540;
+  color: #fff;
+  border-radius: 3px;
+  padding: 12px 21px;
+  text-decoration: none;
+  font-size: 13px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+img {
+  border-radius: 20px;
+  margin: 20px 20px 0px 20px;
+}
